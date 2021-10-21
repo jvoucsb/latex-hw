@@ -1,0 +1,94 @@
+{
+	"Latex HW Starter": {
+		"prefix": "starthw",
+		"body": [
+		  "\\documentclass[12pt]{article}",
+		  "\\usepackage[margin=1in, headheight=15pt]{geometry}",
+		  "\\usepackage{mathtools}",
+		  "\\usepackage{amssymb}",
+		  "\\usepackage{fancyhdr}",
+		  "\\usepackage{pgfplots}",
+		  "\\usepackage{minted}",
+		  "\\usepackage{graphicx}",
+		  "\\usepackage{enumitem}",
+		  "\\usepackage{multicol}",
+		  "\\usepackage[edges]{forest}",
+		  "\\usepackage{array}",
+		  "",
+		  "\\pagestyle{fancy}",
+		  "\\renewcommand{\\headrulewidth}{1pt}",
+		  "\\renewcommand{\\footrulewidth}{0pt}",
+		  "\\rhead {",
+		  "    Justin Vo",
+		  "}",
+		  "\\lhead {",
+		  "    $1",
+		  "}",
+		  "",
+		  "\\pgfplotsset{compat=1.16}",
+		  "",
+		  "\\begin{document}",
+		  "    ${2:\\begin{enumerate\\}\n    \n    \\end{enumerate\\}}",
+	   /* "    \\begin{enumerate}",
+		  "        ${2:\\input{\\}",
+		  "        \\pagebreak}",
+		  "    \\end{enumerate}", */
+		  "\\end{document}"
+		],
+		"description": "My Latex HW Starter"
+	},
+	"Latex New Page": {
+		"prefix": "inputpagebreak",
+		"body": [
+			"\\input{$1}",
+			"\\pagebreak"
+		],
+		"description": "Input a new page and pagebreak"
+	},
+	"Latex Image": {
+		"prefix": "image",
+		"body": [
+			"\\includegraphics[width=\\textwidth]{$1}"
+		],
+		"description": "Input an image"
+	},
+	"Latex Enumerate Alpha": {
+		"prefix": "alphenumerate",
+		"body": [
+			"\\begin{enumerate}[label=(\\alph*)]",
+			"$1",
+			"\\end{enumerate}"
+		],
+		"description": "Enumerate with alpha"
+	},
+	"Latex Title Creator": {
+		"prefix": "createtitle",
+		"body":[
+			"\\title{$1}",
+			"\\author{${2:Justin Vo}}",
+			"\\date{$3}"
+		],
+		"description": "My Latex Title Creator"
+	},
+	"Probability": {
+		"prefix": "probability",
+		"body": [
+		  "\\mathbb{P}(${1:E})"
+		],
+		"description": "Probability"
+	},
+	"Probability Given": {
+		"prefix": "probabilitygiven",
+		"body": [
+		  "\\\\mathbb{P}(${1:A}\\mid ${2:B})"
+		],
+		"description": "Probability Given"
+	},
+	"Solution Title": {
+		"prefix": "solution",
+		"body": [
+		  "\\medbreak\\noindent\\textbf{Solution:}${1:\\\\\\\\}"
+		],
+		"description": "Solution Title"
+	}
+}
